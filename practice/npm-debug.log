@@ -1,0 +1,1051 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'codecheck',
+1 verbose cli   'mocha' ]
+2 info using npm@1.3.6
+3 info using node@v0.10.46
+4 verbose cache add [ 'codecheck', null ]
+5 verbose cache add name=undefined spec="codecheck" args=["codecheck",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'codecheck',
+6 verbose parsed url   path: 'codecheck',
+6 verbose parsed url   href: 'codecheck' }
+7 verbose cache add [ 'mocha', null ]
+8 verbose cache add name=undefined spec="mocha" args=["mocha",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'mocha',
+9 verbose parsed url   path: 'mocha',
+9 verbose parsed url   href: 'mocha' }
+10 silly lockFile 7d8b17f2-codecheck codecheck
+11 verbose lock codecheck /home/vagrant/.npm/7d8b17f2-codecheck.lock
+12 silly lockFile a619da43-mocha mocha
+13 verbose lock mocha /home/vagrant/.npm/a619da43-mocha.lock
+14 silly lockFile 7d8b17f2-codecheck codecheck
+15 silly lockFile 7d8b17f2-codecheck codecheck
+16 verbose addNamed [ 'codecheck', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 4ddd386b-codecheck codecheck@
+19 verbose lock codecheck@ /home/vagrant/.npm/4ddd386b-codecheck.lock
+20 silly addNameRange { name: 'codecheck', range: '*', hasData: false }
+21 silly lockFile a619da43-mocha mocha
+22 silly lockFile a619da43-mocha mocha
+23 verbose url raw codecheck
+24 verbose url resolving [ 'https://registry.npmjs.org/', './codecheck' ]
+25 verbose url resolved https://registry.npmjs.org/codecheck
+26 info trying registry request attempt 1 at 05:55:42
+27 http GET https://registry.npmjs.org/codecheck
+28 verbose addNamed [ 'mocha', '' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile b9899f31-mocha mocha@
+31 verbose lock mocha@ /home/vagrant/.npm/b9899f31-mocha.lock
+32 silly addNameRange { name: 'mocha', range: '*', hasData: false }
+33 verbose url raw mocha
+34 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
+35 verbose url resolved https://registry.npmjs.org/mocha
+36 info trying registry request attempt 1 at 05:55:42
+37 http GET https://registry.npmjs.org/mocha
+38 http 200 https://registry.npmjs.org/codecheck
+39 silly registry.get cb [ 200,
+39 silly registry.get   { server: 'nginx/1.10.1',
+39 silly registry.get     'content-type': 'application/json',
+39 silly registry.get     'last-modified': 'Thu, 12 Jan 2017 06:00:56 GMT',
+39 silly registry.get     etag: 'W/"58771b98-b69f"',
+39 silly registry.get     'content-encoding': 'gzip',
+39 silly registry.get     'cache-control': 'max-age=300',
+39 silly registry.get     'content-length': '5287',
+39 silly registry.get     'accept-ranges': 'bytes',
+39 silly registry.get     date: 'Sun, 12 Feb 2017 20:55:43 GMT',
+39 silly registry.get     via: '1.1 varnish',
+39 silly registry.get     age: '0',
+39 silly registry.get     connection: 'keep-alive',
+39 silly registry.get     'x-served-by': 'cache-itm7422-ITM',
+39 silly registry.get     'x-cache': 'MISS',
+39 silly registry.get     'x-cache-hits': '0',
+39 silly registry.get     'x-timer': 'S1486932942.462295,VS0,VE542',
+39 silly registry.get     vary: 'Accept-Encoding' } ]
+40 silly addNameRange number 2 { name: 'codecheck', range: '*', hasData: true }
+41 silly addNameRange versions [ 'codecheck',
+41 silly addNameRange   [ '0.1.0',
+41 silly addNameRange     '0.2.0',
+41 silly addNameRange     '0.2.1',
+41 silly addNameRange     '0.2.2',
+41 silly addNameRange     '0.2.3',
+41 silly addNameRange     '0.3.0',
+41 silly addNameRange     '0.3.1',
+41 silly addNameRange     '0.3.2',
+41 silly addNameRange     '0.3.3',
+41 silly addNameRange     '0.3.4',
+41 silly addNameRange     '0.3.5',
+41 silly addNameRange     '0.3.6',
+41 silly addNameRange     '0.4.0',
+41 silly addNameRange     '0.4.1',
+41 silly addNameRange     '0.4.2',
+41 silly addNameRange     '0.4.3',
+41 silly addNameRange     '0.4.4',
+41 silly addNameRange     '0.5.0',
+41 silly addNameRange     '0.5.1',
+41 silly addNameRange     '0.5.2',
+41 silly addNameRange     '0.5.3',
+41 silly addNameRange     '0.5.4',
+41 silly addNameRange     '0.5.5',
+41 silly addNameRange     '0.5.6',
+41 silly addNameRange     '0.5.7',
+41 silly addNameRange     '0.5.8',
+41 silly addNameRange     '0.5.9',
+41 silly addNameRange     '0.6.0',
+41 silly addNameRange     '0.6.1' ] ]
+42 verbose addNamed [ 'codecheck', '0.6.1' ]
+43 verbose addNamed [ '0.6.1', '0.6.1' ]
+44 silly lockFile 924ae2a5-codecheck-0-6-1 codecheck@0.6.1
+45 verbose lock codecheck@0.6.1 /home/vagrant/.npm/924ae2a5-codecheck-0-6-1.lock
+46 silly lockFile af280e29-rg-codecheck-codecheck-0-6-1-tgz https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz
+47 verbose lock https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz /home/vagrant/.npm/af280e29-rg-codecheck-codecheck-0-6-1-tgz.lock
+48 verbose addRemoteTarball [ 'https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz',
+48 verbose addRemoteTarball   'dae762ec016ffad3c1b90363fbb4f897baa9b489' ]
+49 info retry fetch attempt 1 at 05:55:43
+50 verbose fetch to= /home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/tmp.tgz
+51 http GET https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz
+52 http 200 https://registry.npmjs.org/mocha
+53 silly registry.get cb [ 200,
+53 silly registry.get   { server: 'nginx/1.10.1',
+53 silly registry.get     'content-type': 'application/json',
+53 silly registry.get     'last-modified': 'Fri, 10 Feb 2017 21:06:43 GMT',
+53 silly registry.get     etag: 'W/"589e2b63-94204"',
+53 silly registry.get     'content-encoding': 'gzip',
+53 silly registry.get     'cache-control': 'max-age=300',
+53 silly registry.get     'content-length': '36621',
+53 silly registry.get     'accept-ranges': 'bytes',
+53 silly registry.get     date: 'Sun, 12 Feb 2017 20:55:43 GMT',
+53 silly registry.get     via: '1.1 varnish',
+53 silly registry.get     age: '0',
+53 silly registry.get     connection: 'keep-alive',
+53 silly registry.get     'x-served-by': 'cache-itm7424-ITM',
+53 silly registry.get     'x-cache': 'HIT',
+53 silly registry.get     'x-cache-hits': '1',
+53 silly registry.get     'x-timer': 'S1486932942.461803,VS0,VE610',
+53 silly registry.get     vary: 'Accept-Encoding' } ]
+54 silly addNameRange number 2 { name: 'mocha', range: '*', hasData: true }
+55 silly addNameRange versions [ 'mocha',
+55 silly addNameRange   [ '0.0.1-alpha1',
+55 silly addNameRange     '0.0.1-alpha2',
+55 silly addNameRange     '0.0.1-alpha3',
+55 silly addNameRange     '0.0.1-alpha4',
+55 silly addNameRange     '0.0.1-alpha5',
+55 silly addNameRange     '0.0.1-alpha6',
+55 silly addNameRange     '0.0.1',
+55 silly addNameRange     '0.0.2',
+55 silly addNameRange     '0.0.3',
+55 silly addNameRange     '0.0.4',
+55 silly addNameRange     '0.0.5',
+55 silly addNameRange     '0.0.6',
+55 silly addNameRange     '0.0.7',
+55 silly addNameRange     '0.0.8',
+55 silly addNameRange     '0.1.0',
+55 silly addNameRange     '0.2.0',
+55 silly addNameRange     '0.3.0',
+55 silly addNameRange     '0.3.1',
+55 silly addNameRange     '0.3.2',
+55 silly addNameRange     '0.3.3',
+55 silly addNameRange     '0.3.4',
+55 silly addNameRange     '0.3.6',
+55 silly addNameRange     '0.4.0',
+55 silly addNameRange     '0.5.0',
+55 silly addNameRange     '0.6.0',
+55 silly addNameRange     '0.7.0',
+55 silly addNameRange     '0.7.1',
+55 silly addNameRange     '0.8.0',
+55 silly addNameRange     '0.8.1',
+55 silly addNameRange     '0.9.0',
+55 silly addNameRange     '0.10.0',
+55 silly addNameRange     '0.10.1',
+55 silly addNameRange     '0.10.2',
+55 silly addNameRange     '0.11.0',
+55 silly addNameRange     '0.12.0',
+55 silly addNameRange     '0.12.1',
+55 silly addNameRange     '0.13.0',
+55 silly addNameRange     '0.14.0',
+55 silly addNameRange     '0.14.1',
+55 silly addNameRange     '1.0.0',
+55 silly addNameRange     '1.0.1',
+55 silly addNameRange     '1.0.2',
+55 silly addNameRange     '1.0.3',
+55 silly addNameRange     '1.1.0',
+55 silly addNameRange     '1.2.0',
+55 silly addNameRange     '1.2.1',
+55 silly addNameRange     '1.2.2',
+55 silly addNameRange     '1.3.0',
+55 silly addNameRange     '1.3.1',
+55 silly addNameRange     '1.3.2',
+55 silly addNameRange     '1.4.0',
+55 silly addNameRange     '1.4.1',
+55 silly addNameRange     '1.4.2',
+55 silly addNameRange     '1.4.3',
+55 silly addNameRange     '1.5.0',
+55 silly addNameRange     '1.6.0',
+55 silly addNameRange     '1.7.0',
+55 silly addNameRange     '1.7.1',
+55 silly addNameRange     '1.7.2',
+55 silly addNameRange     '1.7.3',
+55 silly addNameRange     '1.7.4',
+55 silly addNameRange     '1.8.0',
+55 silly addNameRange     '1.8.1',
+55 silly addNameRange     '1.8.2',
+55 silly addNameRange     '1.9.0',
+55 silly addNameRange     '1.10.0',
+55 silly addNameRange     '1.11.0',
+55 silly addNameRange     '1.12.0',
+55 silly addNameRange     '1.12.1',
+55 silly addNameRange     '1.13.0',
+55 silly addNameRange     '1.14.0',
+55 silly addNameRange     '1.15.0',
+55 silly addNameRange     '1.15.1',
+55 silly addNameRange     '1.16.0',
+55 silly addNameRange     '1.16.1',
+55 silly addNameRange     '1.16.2',
+55 silly addNameRange     '1.17.0',
+55 silly addNameRange     '1.17.1',
+55 silly addNameRange     '1.18.0',
+55 silly addNameRange     '1.18.1',
+55 silly addNameRange     '1.18.2',
+55 silly addNameRange     '1.19.0',
+55 silly addNameRange     '1.20.0',
+55 silly addNameRange     '1.20.1',
+55 silly addNameRange     '1.21.0',
+55 silly addNameRange     '1.21.1',
+55 silly addNameRange     '1.21.2',
+55 silly addNameRange     '1.21.3',
+55 silly addNameRange     '1.21.4',
+55 silly addNameRange     '1.21.5',
+55 silly addNameRange     '2.0.0',
+55 silly addNameRange     '2.0.1',
+55 silly addNameRange     '2.1.0',
+55 silly addNameRange     '2.2.0',
+55 silly addNameRange     '2.2.1',
+55 silly addNameRange     '2.2.3',
+55 silly addNameRange     '2.2.4',
+55 silly addNameRange     '2.2.5',
+55 silly addNameRange     '2.3.0',
+55 silly addNameRange     '2.3.1',
+55 silly addNameRange     '2.3.2',
+55 silly addNameRange     '2.3.3',
+55 silly addNameRange     '2.3.4',
+55 silly addNameRange     '2.4.1',
+55 silly addNameRange     '2.4.2',
+55 silly addNameRange     '2.4.3',
+55 silly addNameRange     '2.4.4',
+55 silly addNameRange     '2.4.5',
+55 silly addNameRange     '2.5.0',
+55 silly addNameRange     '2.5.1',
+55 silly addNameRange     '2.5.2',
+55 silly addNameRange     '2.5.3',
+55 silly addNameRange     '3.0.0-1',
+55 silly addNameRange     '3.0.0-2',
+55 silly addNameRange     '3.0.0',
+55 silly addNameRange     '3.0.1',
+55 silly addNameRange     '3.0.2',
+55 silly addNameRange     '3.1.0',
+55 silly addNameRange     '3.1.1',
+55 silly addNameRange     '3.1.2',
+55 silly addNameRange     '3.2.0' ] ]
+56 verbose addNamed [ 'mocha', '3.2.0' ]
+57 verbose addNamed [ '3.2.0', '3.2.0' ]
+58 silly lockFile 32e787a1-mocha-3-2-0 mocha@3.2.0
+59 verbose lock mocha@3.2.0 /home/vagrant/.npm/32e787a1-mocha-3-2-0.lock
+60 silly lockFile 34a5d24c--npmjs-org-mocha-mocha-3-2-0-tgz https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz
+61 verbose lock https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz /home/vagrant/.npm/34a5d24c--npmjs-org-mocha-mocha-3-2-0-tgz.lock
+62 verbose addRemoteTarball [ 'https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz',
+62 verbose addRemoteTarball   '7dc4f45e5088075171a68896814e6ae9eb7a85e3' ]
+63 info retry fetch attempt 1 at 05:55:43
+64 verbose fetch to= /home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/tmp.tgz
+65 http GET https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz
+66 http 200 https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz
+67 verbose tar unpack /home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/tmp.tgz
+68 silly lockFile 29481f53-633-0-015725416829809546-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+69 verbose lock tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package /home/vagrant/.npm/29481f53-633-0-015725416829809546-package.lock
+70 silly lockFile 566a96c8-633-0-015725416829809546-tmp-tgz tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/tmp.tgz
+71 verbose lock tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/tmp.tgz /home/vagrant/.npm/566a96c8-633-0-015725416829809546-tmp-tgz.lock
+72 silly gunzTarPerm modes [ '755', '644' ]
+73 http 200 https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz
+74 silly gunzTarPerm extractEntry package.json
+75 silly gunzTarPerm extractEntry README.md
+76 silly gunzTarPerm extractEntry LICENSE
+77 silly gunzTarPerm extractEntry browser-entry.js
+78 verbose tar unpack /home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/tmp.tgz
+79 silly lockFile 8e565987-43506-0-7636299356818199-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+80 verbose lock tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package /home/vagrant/.npm/8e565987-43506-0-7636299356818199-package.lock
+81 silly lockFile 76c1da91-43506-0-7636299356818199-tmp-tgz tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/tmp.tgz
+82 verbose lock tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/tmp.tgz /home/vagrant/.npm/76c1da91-43506-0-7636299356818199-tmp-tgz.lock
+83 silly gunzTarPerm modes [ '755', '644' ]
+84 silly gunzTarPerm extractEntry package.json
+85 silly gunzTarPerm extractEntry .npmignore
+86 silly gunzTarPerm extractEntry README.md
+87 silly gunzTarPerm extractEntry index.js
+88 silly gunzTarPerm extractEntry mocha.js
+89 silly gunzTarPerm extractEntry Gruntfile.js
+90 silly gunzTarPerm extractEntry bin/codecheck
+91 silly gunzTarPerm extractEntry codecheck.yml
+92 silly gunzTarPerm extractEntry src/api.js
+93 silly gunzTarPerm extractEntry CHANGELOG.md
+94 silly gunzTarPerm extractEntry src/cli.js
+95 silly gunzTarPerm extractEntry src/codecheck.js
+96 silly gunzTarPerm extractEntry bin/options.js
+97 silly gunzTarPerm extractEntry src/codecheckYaml.js
+98 silly gunzTarPerm extractEntry bin/.eslintrc
+99 silly gunzTarPerm extractEntry bin/_mocha
+100 silly gunzTarPerm extractEntry src/app/abstractApp.js
+101 silly gunzTarPerm extractEntry src/app/consoleApp.js
+102 silly gunzTarPerm extractEntry src/app/webApp.js
+103 silly gunzTarPerm extractEntry src/cli/commandParser.js
+104 silly gunzTarPerm extractEntry src/cli/commandRepository.js
+105 silly gunzTarPerm extractEntry src/cli/commandResult.js
+106 silly gunzTarPerm extractEntry src/commands/clone.js
+107 silly gunzTarPerm extractEntry src/commands/help.js
+108 silly gunzTarPerm extractEntry src/commands/pull.js
+109 silly gunzTarPerm extractEntry src/commands/run.js
+110 silly gunzTarPerm extractEntry src/commands/score.js
+111 silly gunzTarPerm extractEntry src/commands/testResult.js
+112 silly gunzTarPerm extractEntry src/commands/versions.js
+113 silly gunzTarPerm extractEntry src/commands/internal/cloneChallenge.js
+114 silly gunzTarPerm extractEntry src/commands/internal/cloneExam.js
+115 silly gunzTarPerm extractEntry src/commands/internal/signin.js
+116 silly gunzTarPerm extractEntry src/tests/cabalTestRunner.js
+117 silly gunzTarPerm extractEntry src/tests/mavenTestRunner.js
+118 silly gunzTarPerm extractEntry src/tests/mochaTestRunner.js
+119 silly gunzTarPerm extractEntry src/tests/noseTestRunner.js
+120 silly gunzTarPerm extractEntry src/tests/gradleTestRunner.js
+121 silly gunzTarPerm extractEntry src/tests/phpUnitTestRunner.js
+122 silly gunzTarPerm extractEntry src/tests/proveTestRunner.js
+123 silly gunzTarPerm extractEntry src/tests/rspecTestRunner.js
+124 silly gunzTarPerm extractEntry src/tests/sbtTestRunner.js
+125 silly gunzTarPerm extractEntry src/tests/testRunner.js
+126 silly gunzTarPerm extractEntry src/tests/goTestRunner.js
+127 silly gunzTarPerm extractEntry src/tests/testUtils.js
+128 silly gunzTarPerm extractEntry src/tests/nunitTestRunner.js
+129 silly gunzTarPerm extractEntry src/utils/codecheckResult.js
+130 silly gunzTarPerm extractEntry src/utils/fileResolver.js
+131 silly gunzTarPerm extractEntry src/utils/lineEventEmitter.js
+132 silly gunzTarPerm extractEntry src/utils/markdownTest.js
+133 silly gunzTarPerm extractEntry src/utils/myQuote.js
+134 silly gunzTarPerm extractEntry src/utils/readLine.js
+135 silly gunzTarPerm extractEntry .eslintrc
+136 silly gunzTarPerm extractEntry test/large_store.test.js
+137 silly gunzTarPerm extractEntry test/codecheckYaml.test.js
+138 silly gunzTarPerm extractEntry test/config.json.js
+139 silly gunzTarPerm extractEntry test/consoleApp.test.js
+140 silly gunzTarPerm extractEntry test/dummy.test.js
+141 silly gunzTarPerm extractEntry test/clone.test.js
+142 silly gunzTarPerm extractEntry test/lineEventEmitter.test.js
+143 silly gunzTarPerm extractEntry test/markdownTest.test.js
+144 silly gunzTarPerm extractEntry test/pull.test.js
+145 silly gunzTarPerm extractEntry test/score.test.js
+146 silly gunzTarPerm extractEntry test/shellQuote.test.js
+147 silly gunzTarPerm extractEntry test/app_store.test.js
+148 silly gunzTarPerm extractEntry test/app/calcApp.js
+149 silly gunzTarPerm extractEntry test/app/fizzbuzzApp.js
+150 silly gunzTarPerm extractEntry test/testdata/dataUriTest.js
+151 silly gunzTarPerm extractEntry test/testdata/scoreTest.json.js
+152 silly gunzTarPerm extractEntry test/testdata/buildtest.yml
+153 silly gunzTarPerm extractEntry test/testdata/code-main.yml
+154 silly gunzTarPerm extractEntry test/testdata/dataUri.txt
+155 silly gunzTarPerm extractEntry test/testdata/markdownTest1.md
+156 silly gunzTarPerm extractEntry test/testdata/markdownTest2.md
+157 silly lockFile 8e565987-43506-0-7636299356818199-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+158 silly lockFile 8e565987-43506-0-7636299356818199-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+159 silly lockFile 76c1da91-43506-0-7636299356818199-tmp-tgz tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/tmp.tgz
+160 silly lockFile 76c1da91-43506-0-7636299356818199-tmp-tgz tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/tmp.tgz
+161 verbose tar pack [ '/home/vagrant/.npm/codecheck/0.6.1/package.tgz',
+161 verbose tar pack   '/home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package' ]
+162 verbose tarball /home/vagrant/.npm/codecheck/0.6.1/package.tgz
+163 verbose folder /home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+164 silly lockFile 8e565987-43506-0-7636299356818199-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+165 verbose lock tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package /home/vagrant/.npm/8e565987-43506-0-7636299356818199-package.lock
+166 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+167 verbose lock tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz /home/vagrant/.npm/1f04c3c2--npm-codecheck-0-6-1-package-tgz.lock
+168 silly gunzTarPerm extractEntry bin/mocha
+169 silly gunzTarPerm extractEntry bower.json
+170 silly gunzTarPerm extractEntry images/error.png
+171 silly gunzTarPerm extractEntry images/ok.png
+172 silly gunzTarPerm extractEntry lib/utils.js
+173 silly gunzTarPerm extractEntry lib/hook.js
+174 silly gunzTarPerm extractEntry lib/mocha.js
+175 silly gunzTarPerm extractEntry lib/ms.js
+176 silly gunzTarPerm extractEntry lib/pending.js
+177 silly gunzTarPerm extractEntry lib/context.js
+178 silly gunzTarPerm extractEntry lib/runnable.js
+179 silly gunzTarPerm extractEntry lib/runner.js
+180 silly gunzTarPerm extractEntry lib/suite.js
+181 silly gunzTarPerm extractEntry lib/test.js
+182 silly gunzTarPerm extractEntry lib/browser/debug.js
+183 silly gunzTarPerm extractEntry lib/browser/events.js
+184 silly gunzTarPerm extractEntry lib/browser/progress.js
+185 silly gunzTarPerm extractEntry lib/browser/tty.js
+186 silly gunzTarPerm extractEntry lib/browser/.eslintrc.yaml
+187 silly gunzTarPerm extractEntry lib/template.html
+188 silly gunzTarPerm extractEntry lib/interfaces/bdd.js
+189 silly gunzTarPerm extractEntry lib/interfaces/common.js
+190 silly gunzTarPerm extractEntry lib/interfaces/exports.js
+191 silly gunzTarPerm extractEntry lib/interfaces/index.js
+192 silly gunzTarPerm extractEntry lib/interfaces/qunit.js
+193 silly gunzTarPerm extractEntry lib/interfaces/tdd.js
+194 silly gunzTarPerm extractEntry lib/to-iso-string/LICENSE
+195 silly gunzTarPerm extractEntry lib/to-iso-string/index.js
+196 silly gunzTarPerm extractEntry lib/reporters/base.js
+197 silly gunzTarPerm extractEntry lib/reporters/index.js
+198 silly gunzTarPerm extractEntry lib/reporters/json-stream.js
+199 silly gunzTarPerm extractEntry lib/reporters/json.js
+200 silly gunzTarPerm extractEntry lib/reporters/landing.js
+201 silly gunzTarPerm extractEntry lib/reporters/html.js
+202 silly gunzTarPerm extractEntry lib/reporters/markdown.js
+203 silly gunzTarPerm extractEntry lib/reporters/min.js
+204 silly gunzTarPerm extractEntry lib/reporters/nyan.js
+205 silly gunzTarPerm extractEntry lib/reporters/progress.js
+206 silly gunzTarPerm extractEntry lib/reporters/spec.js
+207 silly gunzTarPerm extractEntry lib/reporters/dot.js
+208 silly gunzTarPerm extractEntry lib/reporters/tap.js
+209 silly gunzTarPerm extractEntry lib/reporters/doc.js
+210 silly gunzTarPerm extractEntry lib/reporters/xunit.js
+211 silly gunzTarPerm extractEntry lib/reporters/list.js
+212 silly gunzTarPerm extractEntry mocha.css
+213 silly lockFile 8e565987-43506-0-7636299356818199-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+214 silly lockFile 8e565987-43506-0-7636299356818199-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943506-0.7636299356818199/package
+215 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+216 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+217 silly lockFile 5f78b119-rant-npm-codecheck-0-6-1-package /home/vagrant/.npm/codecheck/0.6.1/package
+218 verbose lock /home/vagrant/.npm/codecheck/0.6.1/package /home/vagrant/.npm/5f78b119-rant-npm-codecheck-0-6-1-package.lock
+219 silly lockFile 5f78b119-rant-npm-codecheck-0-6-1-package /home/vagrant/.npm/codecheck/0.6.1/package
+220 silly lockFile 5f78b119-rant-npm-codecheck-0-6-1-package /home/vagrant/.npm/codecheck/0.6.1/package
+221 verbose tar unpack /home/vagrant/.npm/codecheck/0.6.1/package.tgz
+222 silly lockFile 83f2e9af-rant-npm-codecheck-0-6-1-package tar:///home/vagrant/.npm/codecheck/0.6.1/package
+223 verbose lock tar:///home/vagrant/.npm/codecheck/0.6.1/package /home/vagrant/.npm/83f2e9af-rant-npm-codecheck-0-6-1-package.lock
+224 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+225 verbose lock tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz /home/vagrant/.npm/1f04c3c2--npm-codecheck-0-6-1-package-tgz.lock
+226 silly gunzTarPerm modes [ '755', '644' ]
+227 silly gunzTarPerm extractEntry package.json
+228 silly gunzTarPerm extractEntry .npmignore
+229 silly gunzTarPerm extractEntry README.md
+230 silly gunzTarPerm extractEntry Gruntfile.js
+231 silly gunzTarPerm extractEntry .eslintrc
+232 silly gunzTarPerm extractEntry bin/codecheck
+233 silly gunzTarPerm extractEntry codecheck.yml
+234 silly gunzTarPerm extractEntry src/api.js
+235 silly gunzTarPerm extractEntry src/cli.js
+236 silly gunzTarPerm extractEntry src/codecheck.js
+237 silly gunzTarPerm extractEntry src/codecheckYaml.js
+238 silly gunzTarPerm extractEntry src/app/abstractApp.js
+239 silly gunzTarPerm extractEntry src/app/consoleApp.js
+240 silly gunzTarPerm extractEntry src/app/webApp.js
+241 silly gunzTarPerm extractEntry src/cli/commandParser.js
+242 silly gunzTarPerm extractEntry src/cli/commandRepository.js
+243 silly gunzTarPerm extractEntry src/cli/commandResult.js
+244 silly gunzTarPerm extractEntry src/commands/clone.js
+245 silly gunzTarPerm extractEntry src/commands/help.js
+246 silly gunzTarPerm extractEntry src/commands/pull.js
+247 silly gunzTarPerm extractEntry src/commands/run.js
+248 silly gunzTarPerm extractEntry src/commands/score.js
+249 silly gunzTarPerm extractEntry src/commands/testResult.js
+250 silly gunzTarPerm extractEntry src/commands/versions.js
+251 silly gunzTarPerm extractEntry src/commands/internal/cloneChallenge.js
+252 silly gunzTarPerm extractEntry src/commands/internal/cloneExam.js
+253 silly gunzTarPerm extractEntry src/commands/internal/signin.js
+254 silly gunzTarPerm extractEntry src/tests/cabalTestRunner.js
+255 silly gunzTarPerm extractEntry src/tests/mavenTestRunner.js
+256 silly gunzTarPerm extractEntry src/tests/mochaTestRunner.js
+257 silly gunzTarPerm extractEntry src/tests/noseTestRunner.js
+258 silly gunzTarPerm extractEntry src/tests/gradleTestRunner.js
+259 silly gunzTarPerm extractEntry src/tests/phpUnitTestRunner.js
+260 silly gunzTarPerm extractEntry src/tests/proveTestRunner.js
+261 silly gunzTarPerm extractEntry src/tests/rspecTestRunner.js
+262 silly gunzTarPerm extractEntry src/tests/sbtTestRunner.js
+263 silly gunzTarPerm extractEntry src/tests/testRunner.js
+264 silly gunzTarPerm extractEntry src/tests/goTestRunner.js
+265 silly gunzTarPerm extractEntry src/tests/testUtils.js
+266 silly gunzTarPerm extractEntry src/tests/nunitTestRunner.js
+267 silly gunzTarPerm extractEntry src/utils/codecheckResult.js
+268 silly gunzTarPerm extractEntry src/utils/fileResolver.js
+269 silly gunzTarPerm extractEntry src/utils/lineEventEmitter.js
+270 silly gunzTarPerm extractEntry src/utils/markdownTest.js
+271 silly gunzTarPerm extractEntry src/utils/myQuote.js
+272 silly gunzTarPerm extractEntry src/utils/readLine.js
+273 silly gunzTarPerm extractEntry test/large_store.test.js
+274 silly gunzTarPerm extractEntry test/codecheckYaml.test.js
+275 silly gunzTarPerm extractEntry test/config.json.js
+276 silly gunzTarPerm extractEntry test/consoleApp.test.js
+277 silly gunzTarPerm extractEntry test/dummy.test.js
+278 silly gunzTarPerm extractEntry test/clone.test.js
+279 silly gunzTarPerm extractEntry test/lineEventEmitter.test.js
+280 silly gunzTarPerm extractEntry test/markdownTest.test.js
+281 silly gunzTarPerm extractEntry test/pull.test.js
+282 silly gunzTarPerm extractEntry test/score.test.js
+283 silly gunzTarPerm extractEntry test/shellQuote.test.js
+284 silly gunzTarPerm extractEntry test/app_store.test.js
+285 silly gunzTarPerm extractEntry test/app/calcApp.js
+286 silly gunzTarPerm extractEntry test/app/fizzbuzzApp.js
+287 silly gunzTarPerm extractEntry test/testdata/dataUriTest.js
+288 silly gunzTarPerm extractEntry test/testdata/scoreTest.json.js
+289 silly gunzTarPerm extractEntry test/testdata/buildtest.yml
+290 silly gunzTarPerm extractEntry test/testdata/code-main.yml
+291 silly gunzTarPerm extractEntry test/testdata/dataUri.txt
+292 silly gunzTarPerm extractEntry test/testdata/markdownTest1.md
+293 silly gunzTarPerm extractEntry test/testdata/markdownTest2.md
+294 silly lockFile 29481f53-633-0-015725416829809546-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+295 silly lockFile 29481f53-633-0-015725416829809546-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+296 silly lockFile 566a96c8-633-0-015725416829809546-tmp-tgz tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/tmp.tgz
+297 silly lockFile 566a96c8-633-0-015725416829809546-tmp-tgz tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/tmp.tgz
+298 verbose tar pack [ '/home/vagrant/.npm/mocha/3.2.0/package.tgz',
+298 verbose tar pack   '/home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package' ]
+299 verbose tarball /home/vagrant/.npm/mocha/3.2.0/package.tgz
+300 verbose folder /home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+301 silly lockFile 29481f53-633-0-015725416829809546-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+302 verbose lock tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package /home/vagrant/.npm/29481f53-633-0-015725416829809546-package.lock
+303 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+304 verbose lock tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz /home/vagrant/.npm/5dedfed0-rant-npm-mocha-3-2-0-package-tgz.lock
+305 silly lockFile 83f2e9af-rant-npm-codecheck-0-6-1-package tar:///home/vagrant/.npm/codecheck/0.6.1/package
+306 silly lockFile 83f2e9af-rant-npm-codecheck-0-6-1-package tar:///home/vagrant/.npm/codecheck/0.6.1/package
+307 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+308 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+309 verbose chmod /home/vagrant/.npm/codecheck/0.6.1/package.tgz 644
+310 verbose chown /home/vagrant/.npm/codecheck/0.6.1/package.tgz [ 500, 500 ]
+311 silly lockFile af280e29-rg-codecheck-codecheck-0-6-1-tgz https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz
+312 silly lockFile af280e29-rg-codecheck-codecheck-0-6-1-tgz https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz
+313 silly lockFile 924ae2a5-codecheck-0-6-1 codecheck@0.6.1
+314 silly lockFile 924ae2a5-codecheck-0-6-1 codecheck@0.6.1
+315 silly lockFile 4ddd386b-codecheck codecheck@
+316 silly lockFile 4ddd386b-codecheck codecheck@
+317 silly lockFile 29481f53-633-0-015725416829809546-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+318 silly lockFile 29481f53-633-0-015725416829809546-package tar:///home/vagrant/tmp/npm-3663-ZyYeffKB/1486932943633-0.015725416829809546/package
+319 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+320 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+321 silly lockFile 17e784ad--vagrant-npm-mocha-3-2-0-package /home/vagrant/.npm/mocha/3.2.0/package
+322 verbose lock /home/vagrant/.npm/mocha/3.2.0/package /home/vagrant/.npm/17e784ad--vagrant-npm-mocha-3-2-0-package.lock
+323 silly lockFile 17e784ad--vagrant-npm-mocha-3-2-0-package /home/vagrant/.npm/mocha/3.2.0/package
+324 silly lockFile 17e784ad--vagrant-npm-mocha-3-2-0-package /home/vagrant/.npm/mocha/3.2.0/package
+325 verbose tar unpack /home/vagrant/.npm/mocha/3.2.0/package.tgz
+326 silly lockFile 06301a21--vagrant-npm-mocha-3-2-0-package tar:///home/vagrant/.npm/mocha/3.2.0/package
+327 verbose lock tar:///home/vagrant/.npm/mocha/3.2.0/package /home/vagrant/.npm/06301a21--vagrant-npm-mocha-3-2-0-package.lock
+328 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+329 verbose lock tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz /home/vagrant/.npm/5dedfed0-rant-npm-mocha-3-2-0-package-tgz.lock
+330 silly gunzTarPerm modes [ '755', '644' ]
+331 silly gunzTarPerm extractEntry package.json
+332 silly gunzTarPerm extractEntry README.md
+333 silly gunzTarPerm extractEntry LICENSE
+334 silly gunzTarPerm extractEntry browser-entry.js
+335 silly gunzTarPerm extractEntry index.js
+336 silly gunzTarPerm extractEntry mocha.js
+337 silly gunzTarPerm extractEntry bower.json
+338 silly gunzTarPerm extractEntry bin/options.js
+339 silly gunzTarPerm extractEntry bin/.eslintrc
+340 silly gunzTarPerm extractEntry bin/_mocha
+341 silly gunzTarPerm extractEntry bin/mocha
+342 silly gunzTarPerm extractEntry lib/utils.js
+343 silly gunzTarPerm extractEntry lib/hook.js
+344 silly gunzTarPerm extractEntry lib/mocha.js
+345 silly gunzTarPerm extractEntry lib/ms.js
+346 silly gunzTarPerm extractEntry lib/pending.js
+347 silly gunzTarPerm extractEntry lib/context.js
+348 silly gunzTarPerm extractEntry lib/runnable.js
+349 silly gunzTarPerm extractEntry lib/runner.js
+350 silly gunzTarPerm extractEntry lib/suite.js
+351 silly gunzTarPerm extractEntry lib/test.js
+352 silly gunzTarPerm extractEntry lib/browser/debug.js
+353 silly gunzTarPerm extractEntry lib/browser/events.js
+354 silly gunzTarPerm extractEntry lib/browser/progress.js
+355 silly gunzTarPerm extractEntry lib/browser/tty.js
+356 silly gunzTarPerm extractEntry lib/browser/.eslintrc.yaml
+357 silly gunzTarPerm extractEntry lib/template.html
+358 silly gunzTarPerm extractEntry lib/interfaces/bdd.js
+359 silly gunzTarPerm extractEntry lib/interfaces/common.js
+360 silly gunzTarPerm extractEntry lib/interfaces/exports.js
+361 silly gunzTarPerm extractEntry lib/interfaces/index.js
+362 silly gunzTarPerm extractEntry lib/interfaces/qunit.js
+363 silly gunzTarPerm extractEntry lib/interfaces/tdd.js
+364 silly gunzTarPerm extractEntry lib/to-iso-string/LICENSE
+365 silly gunzTarPerm extractEntry lib/to-iso-string/index.js
+366 silly gunzTarPerm extractEntry lib/reporters/base.js
+367 silly gunzTarPerm extractEntry lib/reporters/index.js
+368 silly gunzTarPerm extractEntry lib/reporters/json-stream.js
+369 silly gunzTarPerm extractEntry lib/reporters/json.js
+370 silly gunzTarPerm extractEntry lib/reporters/landing.js
+371 silly gunzTarPerm extractEntry lib/reporters/html.js
+372 silly gunzTarPerm extractEntry lib/reporters/markdown.js
+373 silly gunzTarPerm extractEntry lib/reporters/min.js
+374 silly gunzTarPerm extractEntry lib/reporters/nyan.js
+375 silly gunzTarPerm extractEntry lib/reporters/progress.js
+376 silly gunzTarPerm extractEntry lib/reporters/spec.js
+377 silly gunzTarPerm extractEntry lib/reporters/dot.js
+378 silly gunzTarPerm extractEntry lib/reporters/tap.js
+379 silly gunzTarPerm extractEntry lib/reporters/doc.js
+380 silly gunzTarPerm extractEntry lib/reporters/xunit.js
+381 silly gunzTarPerm extractEntry lib/reporters/list.js
+382 silly gunzTarPerm extractEntry mocha.css
+383 silly gunzTarPerm extractEntry images/error.png
+384 silly gunzTarPerm extractEntry images/ok.png
+385 silly lockFile 06301a21--vagrant-npm-mocha-3-2-0-package tar:///home/vagrant/.npm/mocha/3.2.0/package
+386 silly lockFile 06301a21--vagrant-npm-mocha-3-2-0-package tar:///home/vagrant/.npm/mocha/3.2.0/package
+387 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+388 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+389 verbose chmod /home/vagrant/.npm/mocha/3.2.0/package.tgz 644
+390 verbose chown /home/vagrant/.npm/mocha/3.2.0/package.tgz [ 500, 500 ]
+391 silly lockFile 34a5d24c--npmjs-org-mocha-mocha-3-2-0-tgz https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz
+392 silly lockFile 34a5d24c--npmjs-org-mocha-mocha-3-2-0-tgz https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz
+393 silly lockFile 32e787a1-mocha-3-2-0 mocha@3.2.0
+394 silly lockFile 32e787a1-mocha-3-2-0 mocha@3.2.0
+395 silly lockFile b9899f31-mocha mocha@
+396 silly lockFile b9899f31-mocha mocha@
+397 silly resolved [ { name: 'codecheck',
+397 silly resolved     version: '0.6.1',
+397 silly resolved     description: 'codecheck CLI',
+397 silly resolved     main: 'src/codecheck.js',
+397 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+397 silly resolved     repository:
+397 silly resolved      { type: 'git',
+397 silly resolved        url: 'git+https://github.com/code-check/codecheck.git' },
+397 silly resolved     keywords: [ 'codecheck', 'test', 'git' ],
+397 silly resolved     author: { name: 'Givery.inc' },
+397 silly resolved     license: 'MIT',
+397 silly resolved     bugs: { url: 'https://github.com/code-check/codecheck/issues' },
+397 silly resolved     bin: { codecheck: './bin/codecheck' },
+397 silly resolved     homepage: 'https://github.com/code-check/codecheck#readme',
+397 silly resolved     dependencies:
+397 silly resolved      { CBuffer: '^1.1.1',
+397 silly resolved        bluebird: '^2.9.34',
+397 silly resolved        'fs-extra': '^0.24.0',
+397 silly resolved        glob: '^7.0.5',
+397 silly resolved        'js-yaml': '^3.3.1',
+397 silly resolved        lodash: '^3.10.0',
+397 silly resolved        mkdirp: '^0.5.1',
+397 silly resolved        moment: '^2.10.5',
+397 silly resolved        'ps-tree': '^1.0.1',
+397 silly resolved        'readline-sync': '^1.2.19',
+397 silly resolved        request: '^2.60.0',
+397 silly resolved        'shell-quote': '^1.6.0',
+397 silly resolved        'socket.io-client': '^1.4.8',
+397 silly resolved        'strip-bom': '^2.0.0' },
+397 silly resolved     devDependencies:
+397 silly resolved      { chai: '^3.2.0',
+397 silly resolved        datauri: '^1.0.4',
+397 silly resolved        grunt: '^0.4.5',
+397 silly resolved        'grunt-contrib-watch': '^0.6.1',
+397 silly resolved        'grunt-eslint': '^18.0.0',
+397 silly resolved        'load-grunt-tasks': '^3.2.0',
+397 silly resolved        rimraf: '^2.4.2',
+397 silly resolved        'time-grunt': '^1.2.1' },
+397 silly resolved     readme: '# codecheck\n- Run several kind of test framework by one command.\n- Launch web server before run end to end test.\n- CLI client of code-check.io.\n\n## Getting started\nInstall from npm.\n\n```\nnpm install codecheck -g\n```\n\nYou can run any test framework like this\n\n```\ncodecheck mocha\ncodecheck mocha specs/test --recursive\ncodecheck sbt\n```\n\nIf the file `codecheck.yml` exists in project root directory, codecheck runs according to it.\n\n## How to run with web server\nDefine web server information in codecheck.yml.\nLike this\n\n```\nweb:\n  command: sbt run\n  port: 9000\n  console: true\n  dir: app\n```\n\n## codecheck.yml\ncodecheck.yml is a setting file of codecheck CLI.  \nIf this file is exist in current directory, its settings are used to run.\n\nIt can have following keys\n\n### build\nArray.  \nIf this section has some commands, run these commands sequencially before run test.\n\n### environment\nHash.  \nYou can pass some environment variable to test.\n\n### web\nWeb application information. \n\nIf defined, launch web app and wait to be ready by polling testUrl.\n\nIt has following sub keys.\n\n- command: required. starting command of web app.\n- port: required. port of web app\n- console: option. if true, console output of web app is displayed.\n- dir: option. base directory of web app.\n- testUrl: option. the url which is used in start check.(Default `/`)\n\n### test\nTest command.  \nIf defined, it is used as default test command.  \nSo, you can run codecheck without any parameters.\n\n```\ncodecheck\n```\n\n### config\nOther configurations.  \nIt has following sub keys.\n\n- timeout: Timeout to wait finishing all tests.\n\n## Work with code-check.io\nAlso, codecheck is a command line client of [code-check.io](https://code-check.io)\n\nIf you are the user of code-check, you can download its challenge result like git.\n\n### codecheck clone\nDownloads all of challenge result source files into your local environment.\n(You have to have code-check account and permission for specified challenge result.)\n\n```\ncodecheck clone 87\n```\n\nIf you are the member of any organization, you can download all of specified exam result with `--exam` option.\n\n```\ncodecheck clone 2 --exam\n```\n\n### codecheck pull\nOnce you have cloned challenge/exam in local environment, you can update it with clone command.\n\n```\ncodecheck clone 87\ncd user1-87\ncodecheck pull\n```\n\n\n### codecheck pull\nYou can download specified challenge result with clone/pull command. (If you have a permission for it.)\n\n```\ncodecheck clone 87\ncd user1-87\n```',
+397 silly resolved     readmeFilename: 'README.md',
+397 silly resolved     _id: 'codecheck@0.6.1',
+397 silly resolved     dist: { shasum: 'a6d2d928c240893fa2a914d34ec39d97865cf4c8' },
+397 silly resolved     _from: 'codecheck@',
+397 silly resolved     _resolved: 'https://registry.npmjs.org/codecheck/-/codecheck-0.6.1.tgz' },
+397 silly resolved   { name: 'mocha',
+397 silly resolved     version: '3.2.0',
+397 silly resolved     description: 'simple, flexible, fun test framework',
+397 silly resolved     keywords: [ 'mocha', 'test', 'bdd', 'tdd', 'tap' ],
+397 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+397 silly resolved     contributors:
+397 silly resolved      [ [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object],
+397 silly resolved        [Object] ],
+397 silly resolved     license: 'MIT',
+397 silly resolved     repository: { type: 'git', url: 'https://github.com/mochajs/mocha.git' },
+397 silly resolved     bin: { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+397 silly resolved     engines: { node: '>= 0.10.x', npm: '>= 1.4.x' },
+397 silly resolved     scripts: { test: 'make test' },
+397 silly resolved     dependencies:
+397 silly resolved      { 'browser-stdout': '1.3.0',
+397 silly resolved        commander: '2.9.0',
+397 silly resolved        debug: '2.2.0',
+397 silly resolved        diff: '1.4.0',
+397 silly resolved        'escape-string-regexp': '1.0.5',
+397 silly resolved        glob: '7.0.5',
+397 silly resolved        growl: '1.9.2',
+397 silly resolved        json3: '3.3.2',
+397 silly resolved        'lodash.create': '3.1.1',
+397 silly resolved        mkdirp: '0.5.1',
+397 silly resolved        'supports-color': '3.1.2' },
+397 silly resolved     devDependencies:
+397 silly resolved      { assert: '^1.4.1',
+397 silly resolved        browserify: '^13.0.0',
+397 silly resolved        'coffee-script': '^1.10.0',
+397 silly resolved        eslint: '^2.13.1',
+397 silly resolved        'eslint-config-semistandard': '^6.0.2',
+397 silly resolved        'eslint-config-standard': '^5.0.0',
+397 silly resolved        'eslint-plugin-promise': '^2.0.1',
+397 silly resolved        'eslint-plugin-standard': '1.3.2',
+397 silly resolved        'expect.js': '^0.3.1',
+397 silly resolved        karma: '^1.1.0',
+397 silly resolved        'karma-browserify': '^5.0.5',
+397 silly resolved        'karma-chrome-launcher': '^2.0.0',
+397 silly resolved        'karma-expect': '^1.1.2',
+397 silly resolved        'karma-mocha': '^1.3.0',
+397 silly resolved        'karma-phantomjs-launcher': '^0.2.3',
+397 silly resolved        'karma-sauce-launcher': '^1.0.0',
+397 silly resolved        'karma-spec-reporter': '0.0.26',
+397 silly resolved        'os-name': '^2.0.1',
+397 silly resolved        phantomjs: '1.9.8',
+397 silly resolved        rimraf: '^2.5.2',
+397 silly resolved        should: '^9.0.2',
+397 silly resolved        through2: '^2.0.1',
+397 silly resolved        watchify: '^3.7.0' },
+397 silly resolved     files:
+397 silly resolved      [ 'bin',
+397 silly resolved        'images',
+397 silly resolved        'lib',
+397 silly resolved        'index.js',
+397 silly resolved        'mocha.css',
+397 silly resolved        'mocha.js',
+397 silly resolved        'browser-entry.js',
+397 silly resolved        'LICENSE',
+397 silly resolved        'bower.json' ],
+397 silly resolved     browser:
+397 silly resolved      { debug: './lib/browser/debug.js',
+397 silly resolved        events: './lib/browser/events.js',
+397 silly resolved        tty: './lib/browser/tty.js',
+397 silly resolved        './index.js': './browser-entry.js',
+397 silly resolved        fs: false,
+397 silly resolved        glob: false,
+397 silly resolved        path: false,
+397 silly resolved        'supports-color': false },
+397 silly resolved     homepage: 'https://mochajs.org',
+397 silly resolved     logo: 'https://cldup.com/S9uQ-cOLYz.svg',
+397 silly resolved     readme: '<br><br>\n<p align="center">\n  <img src="https://cldup.com/xFVFxOioAU.svg" alt="Mocha test framework"/>\n</p>\n\n[![Build Status](https://api.travis-ci.org/mochajs/mocha.svg?branch=master)](http://travis-ci.org/mochajs/mocha) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mochajs/mocha?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![OpenCollective](https://opencollective.com/mochajs/backers/badge.svg)](#backers)\n[![OpenCollective](https://opencollective.com/mochajs/sponsors/badge.svg)](#sponsors)\n<br><img alt="Mocha Browser Support h/t SauceLabs" src="https://saucelabs.com/browser-matrix/mochajs.svg" width="354">\n\n  Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the [documentation](http://mochajs.org).\n\n## Links\n\n  - [Changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)\n  - [Google Group](http://groups.google.com/group/mochajs)\n  - [Wiki](https://github.com/mochajs/mocha/wiki)\n  - Mocha [Extensions and reporters](https://github.com/mochajs/mocha/wiki)\n\n\n## Backers\n\n[Become a backer]((https://opencollective.com/mochajs#backer)) and show your support to our open source project.\n\n<a href="https://opencollective.com/mochajs/backer/0/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/0/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/1/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/1/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/2/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/2/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/3/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/3/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/4/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/4/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/5/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/5/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/6/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/6/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/7/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/7/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/8/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/8/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/9/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/9/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/10/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/10/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/11/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/11/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/12/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/12/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/13/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/13/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/14/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/14/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/15/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/15/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/16/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/16/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/17/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/17/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/18/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/18/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/19/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/19/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/20/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/20/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/21/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/21/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/22/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/22/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/23/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/23/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/24/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/24/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/25/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/25/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/26/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/26/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/27/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/27/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/28/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/28/avatar"></a>\n<a href="https://opencollective.com/mochajs/backer/29/website" target="_blank"><img src="https://opencollective.com/mochajs/backer/29/avatar"></a>\n\n\n## Sponsors\n\nDoes your company use Mocha?  Ask your manager or marketing team if your company would be interested in supporting our project.  Support will allow the maintainers to dedicate more time for maintenance and new features for everyone.  Also, your company\'s logo will show [on GitHub](https://github.com/mochajs/mocha#readme) and on [our site](https://mochajs.org)--who doesn\'t want a little extra exposure?  [Here\'s the info](https://opencollective.com/mochajs#sponsor).\n\n<a href="https://opencollective.com/mochajs/sponsor/0/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/0/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/1/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/1/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/2/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/2/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/3/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/3/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/4/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/4/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/5/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/5/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/6/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/6/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/7/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/7/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/8/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/8/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/9/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/9/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/10/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/10/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/11/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/11/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/12/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/12/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/13/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/13/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/14/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/14/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/15/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/15/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/16/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/16/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/17/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/17/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/18/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/18/avatar"></a>\n<a href="https://opencollective.com/mochajs/sponsor/19/website" target="_blank"><img src="https://opencollective.com/mochajs/sponsor/19/avatar"></a>\n\n## License\n\n[MIT](LICENSE)\n',
+397 silly resolved     readmeFilename: 'README.md',
+397 silly resolved     bugs: { url: 'https://github.com/mochajs/mocha/issues' },
+397 silly resolved     _id: 'mocha@3.2.0',
+397 silly resolved     dist: { shasum: '3247060fa3a461743459b854a7fb19605b3d4a04' },
+397 silly resolved     _from: 'mocha@',
+397 silly resolved     _resolved: 'https://registry.npmjs.org/mocha/-/mocha-3.2.0.tgz' } ]
+398 info install codecheck@0.6.1 into /usr/lib
+399 info install mocha@3.2.0 into /usr/lib
+400 info installOne codecheck@0.6.1
+401 info installOne mocha@3.2.0
+402 warn engine mocha@3.2.0: wanted: {"node":">= 0.10.x","npm":">= 1.4.x"} (current: {"node":"v0.10.46","npm":"1.3.6"})
+403 info /usr/lib/node_modules/codecheck unbuild
+404 info /usr/lib/node_modules/mocha unbuild
+405 verbose tar unpack /home/vagrant/.npm/codecheck/0.6.1/package.tgz
+406 silly lockFile a369c29d-r-usr-lib-node-modules-codecheck tar:///usr/lib/node_modules/codecheck
+407 verbose lock tar:///usr/lib/node_modules/codecheck /home/vagrant/.npm/a369c29d-r-usr-lib-node-modules-codecheck.lock
+408 silly lockFile 1f04c3c2--npm-codecheck-0-6-1-package-tgz tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz
+409 verbose lock tar:///home/vagrant/.npm/codecheck/0.6.1/package.tgz /home/vagrant/.npm/1f04c3c2--npm-codecheck-0-6-1-package-tgz.lock
+410 verbose tar unpack /home/vagrant/.npm/mocha/3.2.0/package.tgz
+411 silly lockFile f6860037-tar-usr-lib-node-modules-mocha tar:///usr/lib/node_modules/mocha
+412 verbose lock tar:///usr/lib/node_modules/mocha /home/vagrant/.npm/f6860037-tar-usr-lib-node-modules-mocha.lock
+413 silly lockFile 5dedfed0-rant-npm-mocha-3-2-0-package-tgz tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz
+414 verbose lock tar:///home/vagrant/.npm/mocha/3.2.0/package.tgz /home/vagrant/.npm/5dedfed0-rant-npm-mocha-3-2-0-package-tgz.lock
+415 silly gunzTarPerm modes [ '755', '644' ]
+416 silly gunzTarPerm modes [ '755', '644' ]
+417 error Error: EACCES, mkdir '/usr/lib/node_modules/codecheck'
+417 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/codecheck']
+417 error   errno: 3,
+417 error   code: 'EACCES',
+417 error   path: '/usr/lib/node_modules/codecheck',
+417 error   fstream_type: 'Directory',
+417 error   fstream_path: '/usr/lib/node_modules/codecheck',
+417 error   fstream_class: 'DirWriter',
+417 error   fstream_stack:
+417 error    [ '/usr/lib/node_modules/fstream/lib/dir-writer.js:36:23',
+417 error      '/usr/lib/node_modules/mkdirp/index.js:37:53',
+417 error      'Object.oncomplete (fs.js:108:15)' ] }
+418 error Please try running this command again as root/Administrator.
+419 error System Linux 2.6.32-431.3.1.el6.x86_64
+420 error command "node" "/usr/bin/npm" "install" "--global" "codecheck" "mocha"
+421 error cwd /vagrant/practice
+422 error node -v v0.10.46
+423 error npm -v 1.3.6
+424 error path /usr/lib/node_modules/codecheck
+425 error fstream_path /usr/lib/node_modules/codecheck
+426 error fstream_type Directory
+427 error fstream_class DirWriter
+428 error code EACCES
+429 error errno 3
+430 error stack Error: EACCES, mkdir '/usr/lib/node_modules/codecheck'
+431 error fstream_stack /usr/lib/node_modules/fstream/lib/dir-writer.js:36:23
+431 error fstream_stack /usr/lib/node_modules/mkdirp/index.js:37:53
+431 error fstream_stack Object.oncomplete (fs.js:108:15)
+432 verbose exit [ 3, true ]

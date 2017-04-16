@@ -1,0 +1,29 @@
+
+html.erbに描かれるcollectionはrailsの7つ以外のアクションを定義するときに使う。
+
+form_for (モデルクラスのインスタンス)
+form_for: モデルがあるデータを扱うときに使う。(投稿フォームなど)
+
+form_tag (モデルクラスのインスタンスがいらないとき）
+form_tag: 単にデータを特定のアクションに送りたい時に使う。（検索フォームなど）
+
+params.require(: the name of the model).permit(:the name of column)
+
+
+before_action: :move_to_index, except: :index
+except: :indexとすることで、indexアクション以外の時に、before_actionが実行される。
+
+
+config/routes.rb内に書かれたルーティングの記述は、上から順番に読まれます。
+つまり「マイページに関するルーティングget 'users/:user_id'」を上に書いてしまうと、始めにそれが読まれてしまいます。
+
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+
+
+ def create
+    Tweet.create(image; tweet_params[:image], text: text_params[:text], user_id: current_user_id)
+ end
+
+ def tweet_params
+    params.permit(:image, :text)
+ end
