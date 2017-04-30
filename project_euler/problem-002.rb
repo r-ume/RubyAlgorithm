@@ -18,7 +18,7 @@ begin
 end while next_number < 4000000
 
 sequence.each do |number|
-  if(number % 2 == 0)
+  if number % 2 == 0
     sum += number
   end
 end

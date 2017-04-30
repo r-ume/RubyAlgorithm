@@ -8,15 +8,15 @@ def prime?(number)
       return false
     end
   end
-  return true
+  true
 end
 
 # see if the assigned number can be divided by the number in each loop
 def factor?(current_number, number)
   if number % current_number == 0
-    return true
+    true
   else
-    return false
+    false
   end
 end
 

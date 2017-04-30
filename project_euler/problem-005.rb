@@ -10,12 +10,12 @@
 def divisible_by_1to20?(number)
   divisors = [19, 18, 17, 16, 15, 14, 13, 12, 11]
   divisors.each do |divisor|
-    if(number % divisor != 0)
-      return false
+    if number % divisor != 0
+       false
     end
   end
 
-  return true
+  true
 end
 
 number, base = 20, 1
