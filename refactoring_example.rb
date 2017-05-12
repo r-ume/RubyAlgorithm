@@ -66,10 +66,9 @@ end
 #   Using private statement implies that you can skip reading it when it is not necessary
 
 class OrdersReport
-  def initialize(orders, start_date, end_date)
+  def initialize(orders, date_range)
     @orders = orders
-    @start_date = start_date
-    @end_date = end_date
+    @date_range = date_range
   end
 
   def total_sales_within_date_range
@@ -83,6 +82,14 @@ class OrdersReport
     @orders.select do |order|
       order.placed_between?(@start_date, @end_date)
     end
+  end
+end
+
+class DateRange < Struct.new(:start_date, :end_date)
+  def include?(date)
+    # this cover method is convenient. 
+    # It is like reading English
+    (start_date..end_date).cover? date 
   end
 end
 
