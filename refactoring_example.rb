@@ -98,3 +98,40 @@ class Order < OpenStruct
     placed_at >= start_date && placed_at <= end_date
   end
 end
+
+
+# Awesome code
+# Why code below is awesome
+#   - Any function that does not get called outside should be private 
+#   - Ideally, any function should be less than 3 lines.
+class OrdersReport
+  def initialize(orders, date_range)
+    @orders = orders
+    @date_range = date_range
+  end
+
+  def total_sales_within_date_range
+    total_sales(orders_within_range)
+  end
+
+  private 
+  def total_sales(orders)
+    orders.map(&:amount).inject(0, :+)
+  end 
+
+  def orders_within_range 
+    @orders.select { |order| order.placed_between?(@date_range)}
+  end 
+end
+
+class DateRange < Struct.new(:start_date, :end_date)
+  def include?(date)
+    (start_date..end_date).cover? date
+  end
+end
+
+class Order < OpenStruct
+  def placed_between?(date_range)
+    date_range.include?(placed_at)
+  end
+end
