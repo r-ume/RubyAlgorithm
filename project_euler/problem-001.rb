@@ -8,3 +8,12 @@ sum = 0
 end
 
 p "Answer: " + sum.to_s
+
+module Enumerable
+  def sum
+    inject(0, :+)
+  end 
+end
+
+puts 1.upto(9999).select{ |x| x % 3 == 0 || x % 5 == 0 }.sum
+
