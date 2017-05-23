@@ -1,4 +1,4 @@
-class UserQueue
+class Queue
   def initialize(length)
     @length = length
     @q = Array.new(@length)
@@ -23,14 +23,9 @@ class UserQueue
     @full = false if @head == @tail
     x
   end
-  
-  def inspect
-    @q.inspect
-  end
-  alias to_s inspect
 end
 
-q = UserQueue.new(3)
+q = Queue.new(3)
 p q.enqueue(1).enqueue(2)    #=>[1, 2, nil]
 p q.dequeue                  #=>1
 p q.enqueue(5).enqueue(6)    #=>[6, 2, 5]
