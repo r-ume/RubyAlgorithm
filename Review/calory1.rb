@@ -1,6 +1,11 @@
 class Food
   @@foods = []
 
+  def initialize(name, calory)
+    @name = name
+    @calory = calory
+  end
+
   def self.input
     puts "Put the name of main dish:"
     name = gets.chomp
@@ -25,29 +30,24 @@ class Food
     puts "The total of calory: #{all_calory}kcal"
   end
 
-  def initialize(name, calory)
-    @name = name
-    @calory = calory
-  end
-
   def name
-    return @name
+    @name
   end
 
   def calory
-    return @calory
+    @calory
   end
+end
 
-  while true do
-    puts "[0]:Put calory"
-    puts "[1]:Check the total of the calory"
-    input = gets.to_i
+while true do
+  puts "[0]:Put calory"
+  puts "[1]:Check the total of the calory"
+  input = gets.to_i
 
-    if input == 0
-        Food.input
-      elsif input == 1
-        Food.show_all_calory
-        exit
-    end
+  if input == 0
+      Food.input
+    elsif input == 1
+      Food.show_all_calory
+      exit
   end
 end
