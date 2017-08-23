@@ -14,10 +14,9 @@ Rails.application.config.sorcery.configure do |config|
   config.facebook.callback_url = ENV['FACEBOOK_CALLBACK_URL']
   config.facebook.display = "page"
   # 以下3つは取得したい項目と合わせて変更する
-  # config.facebook.user_info_mapping = { email: "email", name: "name", gender: "gender" }
   config.facebook.user_info_mapping = { email: "email" }
-  # config.facebook.user_info_path = "me?fields=email,name,gender"
   config.facebook.user_info_path = "me?fields=email"
+  # email property is within a list of public profile.
   config.facebook.access_permissions = ["public_profile", "email"]
 
   config.user_config do |user|
@@ -121,15 +120,6 @@ Rails.application.config.sorcery.configure do |config|
   # config.twitter.secret = ""
   # config.twitter.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=twitter"
   # config.twitter.user_info_mapping = {:email => "screen_name"}
-  #
-  # config.facebook.key = ""
-  # config.facebook.secret = ""
-  # config.facebook.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=facebook"
-  # config.facebook.user_info_mapping = {:email => "name"}
-  # config.facebook.access_permissions = ["email", "publish_actions"]
-  # config.facebook.display = "page"
-  # config.facebook.api_version = "v2.3"
-  # config.facebook.parse = :json
   #
   # config.github.key = ""
   # config.github.secret = ""
