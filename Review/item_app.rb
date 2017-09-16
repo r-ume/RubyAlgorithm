@@ -46,7 +46,7 @@ while true do
   choice = gets.to_i
 
   if choice == 1
-    item = Item.new
+    Item.new
   elsif choice == 2
     Item.list_all_items
     p "Choose a specific item that you would like to take a look at."
