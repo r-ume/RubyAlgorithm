@@ -7,4 +7,3 @@ end
 
 gem 'faraday'
 gem 'pry'
-gem 'pry-byebug'
