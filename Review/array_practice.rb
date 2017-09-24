@@ -133,3 +133,7 @@ nogizaka = [
   ["堀未央奈", 3035],
 ]
 puts nogizaka.sort_by { |_, b| b }.reverse
+
+numbers = [1, 2, 3]
+numbers_with_zero_and_100 = [0, *numbers, 100]
+p numbers_with_zero_and_100 # => [0, 1, 2, 3, 100]
