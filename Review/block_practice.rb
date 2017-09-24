@@ -74,11 +74,9 @@ p total(1, 10)
 p total(1, 10){ |num| num ** 2 }
 
 
+def my_method (&my_block)
+  my_block
+end
 
-
-
-
-
-
-
-
+obj = my_method { |x| x + 1 }
+obj.call(2)
