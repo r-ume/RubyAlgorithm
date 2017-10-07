@@ -1,5 +1,7 @@
 require "sample_gem/version"
 
 module SampleGem
-  # Your code goes here...
+  def self.hello_ruby
+    p 'Hello Ruby!'
+  end
 end
