@@ -18,8 +18,7 @@ class GoogleAuthentication
     FileUtils.mkdir_p(File.dirname(CREDENTIALS_PATH))
     client_id = Google::Auth::ClientId.from_file(CLIENT_SECRETS_PATH)
     token_store = Google::Auth::Stores::FileTokenStore.new(file: CREDENTIALS_PATH)
-    authorizer = Google::Auth::UserAuthorizer.new(
-        client_id, SCOPE, token_store)
+    authorizer = Google::Auth::UserAuthorizer.new(client_id, SCOPE, token_store)
     user_id = 'default'
     credentials = authorizer.get_credentials(user_id)
     if credentials.nil?

@@ -6,7 +6,7 @@ require './slack_notifier.rb'
 google_calendar = GoogleCalendar.new
 notifications = google_calendar.outputs_calendar_events
 
-p notifications
+p notifications = notifications.join(', ')
 
 slack_notifier = SlackNotifier.new
 slack_notifier.sends_notification(notifications)
