@@ -1,6 +1,8 @@
+require 'rubygems'
 require 'pry'
 require 'date'
 require './google_authentication.rb'
+require './mentors.rb'
 
 class GoogleCalendar
   PRIMARY_CALENDAR_ID = 'tcwaseda@gmail.com'
@@ -23,8 +25,8 @@ class GoogleCalendar
     calendars.map{ |calendar| calendar.id }
   end
 
-  def fetch_calendar_events
-    calendar_events = get_calendar_ids.map do |calendar_id|
+  def fetch_all_shifts
+    all_shifts = get_calendar_ids.map do |calendar_id|
       @google_calendar.list_events(calendar_id).items.map do |event|
         {
             mentor: event.summary,
@@ -32,14 +34,17 @@ class GoogleCalendar
         }
       end
     end
-    calendar_events.flatten
+    all_shifts.flatten!
   end
 
-  def outputs_calendar_events
-    fetch_calendar_events.items.map do |event|
-      start = event.start.date || event.start.date_time
-      "#{event.summary} (#{start})"
-    end
+  def shifts_without_no_start_time
+    fetch_all_shifts.delete_if{ |shift| shift[:start_time].nil? }
+  end
+
+  def outputs_today_mentors_shift
+    shifts_without_no_start_time.select { |event|
+       event[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
+    }
   end
 
   def responses_empty?

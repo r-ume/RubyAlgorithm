@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'pry'
 require 'fileutils'
 require 'google/apis/calendar_v3'
