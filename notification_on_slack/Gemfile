@@ -17,3 +17,6 @@ gem 'google-api-client'
 
 # SLACK NOTIFICATION
 gem 'slack-notifier'
+
+# ENUM
+gem 'ruby-enum'

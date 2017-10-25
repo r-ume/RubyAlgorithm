@@ -5,6 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     byebug (9.1.0)
     coderay (1.1.2)
+    concurrent-ruby (1.0.5)
     declarative (0.0.10)
     declarative-option (0.1.0)
     dotenv (2.2.1)
@@ -26,6 +27,8 @@ GEM
       os (~> 0.9)
       signet (~> 0.7)
     httpclient (2.8.3)
+    i18n (0.9.0)
+      concurrent-ruby (~> 1.0)
     jwt (1.5.6)
     little-plugger (1.1.4)
     logging (2.2.2)
@@ -51,6 +54,8 @@ GEM
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
     retriable (3.1.1)
+    ruby-enum (0.7.1)
+      i18n
     signet (0.7.3)
       addressable (~> 2.3)
       faraday (~> 0.9)
@@ -67,6 +72,7 @@ DEPENDENCIES
   google-api-client
   pry
   pry-byebug
+  ruby-enum
   slack-notifier
 
 BUNDLED WITH
