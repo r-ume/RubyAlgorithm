@@ -41,19 +41,19 @@ class GoogleCalendar
     fetch_all_shifts.delete_if{ |shift| shift[:start_time].nil? }
   end
 
-  def shifts_in_correct_time_format
-    shifts_without_no_start_time.map do |shift|
+  def today_shifts
+    shifts_without_no_start_time.select { |shift|
+       shift[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
+    }
+  end
+
+  def right_time_format_shifts
+    today_shifts.map do |shift|
       {
           calendar_name: shift[:calendar_name],
           start_time: shift[:start_time].strftime("%Y-%m-%d %H:%M")
       }
     end
-  end
-
-  def outputs_today_mentors_shift
-    shifts_in_correct_time_format.select { |shift|
-       shift[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
-    }
   end
 
   def responses_empty?
