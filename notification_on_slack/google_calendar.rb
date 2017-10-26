@@ -16,6 +16,16 @@ class GoogleCalendar
     @google_calendar.client_options.application_name = APPLICATION_NAME
   end
 
+  def right_time_format_shifts
+    today_shifts.map do |shift|
+      {
+          calendar_name: shift[:calendar_name],
+          start_time:    shift[:start_time].strftime("%Y-%m-%d %H:%M")
+      }
+    end
+  end
+
+  protected
   def fetch_calendars
     @google_calendar.list_calendar_lists.items
   end
@@ -45,15 +55,6 @@ class GoogleCalendar
     shifts_without_no_start_time.select { |shift|
        shift[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
     }
-  end
-
-  def right_time_format_shifts
-    today_shifts.map do |shift|
-      {
-          calendar_name: shift[:calendar_name],
-          start_time: shift[:start_time].strftime("%Y-%m-%d %H:%M")
-      }
-    end
   end
 
   def responses_empty?

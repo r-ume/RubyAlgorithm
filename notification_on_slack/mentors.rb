@@ -16,4 +16,15 @@ class Mentors
   define 'ANJU',    { mention: '@anju',           calendar_name: 'あんじゅ' }
   define 'MAI',     { mention: '@takana-mai',     calendar_name: 'まい' }
 
+  def self.add_their_mentions_into(shifts)
+    shifts_with_mentions = []
+    self.values.each { |value|
+      shifts.each { |shift|
+        if shift[:calendar_name].include?(value[:calendar_name])
+          shifts_with_mentions << value.merge(shift)
+        end
+      }
+    }
+    shifts_with_mentions
+  end
 end

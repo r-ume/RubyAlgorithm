@@ -4,6 +4,8 @@ require 'slack-notifier'
 
 class SlackNotifier
 
+  STARTER_NOTIFICATION = '今日のシフトはこちら！'
+
   def initialize
     @notifier = Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL'])
   end
@@ -11,4 +13,5 @@ class SlackNotifier
   def sends_notification(notification)
     @notifier.ping(notification)
   end
+
 end

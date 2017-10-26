@@ -8,19 +8,12 @@ require './mentors.rb'
 google_calendar = GoogleCalendar.new
 shifts = google_calendar.right_time_format_shifts
 
-shifts_with_mentions = []
+shifts_with_mentions = Mentors.add_their_mentions(shifts)
 
-Mentors.values.each { |value|
-  shifts.each { |shift|
-    if shift[:calendar_name].include?(value[:calendar_name])
-      shift_with_mention = value.merge(shift)
-      shifts_with_mentions << shift_with_mention
-    end
-  }
-}
+slack_notifier = SlackNotifier.new
+slack_notifier.sends_notification(SlackNotifier::STARTER_NOTIFICATION)
 
-shifts_with_mentions.map do |shift_with_mention|
-  slack_notifier      = SlackNotifier.new
+shifts_with_mentions.each do |shift_with_mention|
   shifts_with_mention = "<#{shift_with_mention[:mention]}> : #{shift_with_mention[:calendar_name]} : #{shift_with_mention[:start_time]}"
   slack_notifier.sends_notification(shifts_with_mention)
 end
