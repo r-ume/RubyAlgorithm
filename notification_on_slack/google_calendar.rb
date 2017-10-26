@@ -29,7 +29,7 @@ class GoogleCalendar
     all_shifts = get_calendar_ids.map do |calendar_id|
       @google_calendar.list_events(calendar_id).items.map do |event|
         {
-            mentor: event.summary,
+            calendar_name: event.summary,
             start_time: event.start.date_time
         }
       end
@@ -41,9 +41,18 @@ class GoogleCalendar
     fetch_all_shifts.delete_if{ |shift| shift[:start_time].nil? }
   end
 
+  def shifts_in_correct_time_format
+    shifts_without_no_start_time.map do |shift|
+      {
+          calendar_name: shift[:calendar_name],
+          start_time: shift[:start_time].strftime("%Y-%m-%d %H:%M")
+      }
+    end
+  end
+
   def outputs_today_mentors_shift
-    shifts_without_no_start_time.select { |event|
-       event[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
+    shifts_in_correct_time_format.select { |shift|
+       shift[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
     }
   end
 
