@@ -3,4 +3,4 @@
 export PATH="/Users/umeki/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-ruby sample_quickstart.rb
+ruby main_script.rb
