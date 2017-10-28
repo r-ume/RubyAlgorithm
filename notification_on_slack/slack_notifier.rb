@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'pry'
 require 'dotenv/load'
 require 'slack-notifier'
