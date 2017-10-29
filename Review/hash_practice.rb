@@ -1,5 +1,20 @@
 require 'pry'
 
+class HashPractice
+  def initialize(args)
+    @chainring = args.fetch(:chainring, 40)
+
+    # or
+
+    args = defaults.merge(args)
+    @chainring = args[:chainring]
+  end
+
+  def defaults
+    { chainring: 40, cog: 18 }
+  end
+end
+
 num_hash = { hoge: 1, fuga: 2, piyo: 3 }
 p num_hash.select!{ |key, val| val.odd? } # => {:hoge=>1, :piyo=>3}
 
