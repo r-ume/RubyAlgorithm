@@ -3,4 +3,4 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-ruby main_script.rb
+bundle exec ruby main_script.rb

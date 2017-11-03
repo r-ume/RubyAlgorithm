@@ -24,6 +24,8 @@ class SlackNotifier
       shifts_with_mention = "<#{shift_with_mention[:mention]}> : #{shift_with_mention[:calendar_name]} : #{shift_with_mention[:start_time]}"
       self.sends_notification(shifts_with_mention)
     end
+
+    self.sends_notification(HOPING_REACTION_STATEMENT)
   end
 
 end
