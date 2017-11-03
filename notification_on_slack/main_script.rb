@@ -6,7 +6,7 @@ require './slack_notifier.rb'
 require './mentors.rb'
 
 google_calendar = GoogleCalendar.new
-shifts = google_calendar.right_time_format_shifts
+shifts = google_calendar.today_shifts
 
 shifts_with_mentions = Mentors.add_their_mentions_into(shifts)
 

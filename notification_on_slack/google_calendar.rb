@@ -3,12 +3,11 @@ require 'pry'
 require 'date'
 require './google_authentication.rb'
 require './mentors.rb'
+require './util/array_iterator.rb'
 
 class GoogleCalendar
   PRIMARY_CALENDAR_ID = 'tcwaseda@gmail.com'
   APPLICATION_NAME    = 'Slack Notification From Calendar'
-  CURRENT_DATETIME    = DateTime.now
-  TOMORROW_DATETIME   = CURRENT_DATETIME + 1
 
   def initialize
     @google_calendar                                 = GoogleAuthentication.access_to_calendar_service
@@ -16,13 +15,8 @@ class GoogleCalendar
     @google_calendar.client_options.application_name = APPLICATION_NAME
   end
 
-  def right_time_format_shifts
-    today_shifts.map do |shift|
-      {
-          calendar_name: shift[:calendar_name],
-          start_time:    shift[:start_time].strftime("%Y-%m-%d %H:%M")
-      }
-    end
+  def today_shifts
+    Util::ArrayIterator.select_today_elements(shifts_without_no_start_time)
   end
 
   protected
@@ -48,16 +42,10 @@ class GoogleCalendar
   end
 
   def shifts_without_no_start_time
-    fetch_all_shifts.delete_if{ |shift| shift[:start_time].nil? }
+    Util::ArrayIterator.remove_no_start_time_elements(fetch_all_shifts)
   end
 
-  def today_shifts
-    shifts_without_no_start_time.select { |shift|
-       shift[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME)
-    }
-  end
-
-  def responses_empty?
+  def empty?
     @google_calendar.response.item.empty?
   end
 end
