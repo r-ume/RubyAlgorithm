@@ -16,14 +16,14 @@ class GoogleCalendar
   end
 
   def today_shifts
-    Util::ArrayIterator.select_today_elements(shifts_without_no_start_time)
+    Util::ArrayIterator.select_tomorrow_elements(shifts_without_no_start_time)
   end
 
-  protected
   def fetch_calendars
     @google_calendar.list_calendar_lists.items
   end
 
+  protected
   def get_calendar_ids
     calendars = fetch_calendars.delete_if{ |calendar| calendar.id == PRIMARY_CALENDAR_ID }
     calendars.map{ |calendar| calendar.id }
@@ -43,9 +43,5 @@ class GoogleCalendar
 
   def shifts_without_no_start_time
     Util::ArrayIterator.remove_no_start_time_elements(fetch_all_shifts)
-  end
-
-  def empty?
-    @google_calendar.response.item.empty?
   end
 end

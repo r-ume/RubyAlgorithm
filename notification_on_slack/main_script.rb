@@ -8,8 +8,11 @@ require './util/array_iterator.rb'
 
 google_calendar = GoogleCalendar.new
 shifts = google_calendar.today_shifts
-
 shifts_with_mentions = Mentors.add_their_mentions_into(shifts)
-
 slack_notifier = SlackNotifier.new
-slack_notifier.sends_todays_shifts(shifts_with_mentions)
+
+if google_calendar.fetch_calendars.empty?
+  slack_notifier.sends_notification(SlackNotifier::NO_SHIFT_STATEMENT)
+else
+  slack_notifier.sends_tomorrow_shifts(shifts_with_mentions)
+end

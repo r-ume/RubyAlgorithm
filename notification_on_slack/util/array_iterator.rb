@@ -8,7 +8,7 @@ module Util
         array.delete_if{ |element| element[:start_time].nil? }
       end
 
-      def select_today_elements(array)
+      def select_tomorrow_elements(array)
         array.select{ |element| element[:start_time].between?(CURRENT_DATETIME, TOMORROW_DATETIME) }
               .map{ |element|
                 {

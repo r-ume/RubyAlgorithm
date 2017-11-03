@@ -5,7 +5,9 @@ require 'slack-notifier'
 
 class SlackNotifier
 
-  STARTER_NOTIFICATION = '今日のシフトはこちら！'
+  STARTER_NOTIFICATION      = '今日のシフトはこちら！'
+  HOPING_REACTION_STATEMENT = 'メンションの人はリアクションお願いします！'
+  NO_SHIFT_STATEMENT        = '明日のシフトはありません！'
 
   def initialize
     @notifier = Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL'])
@@ -15,7 +17,7 @@ class SlackNotifier
     @notifier.ping(notification)
   end
 
-  def sends_todays_shifts(shifts_with_mentions)
+  def sends_tomorrow_shifts(shifts_with_mentions)
     self.sends_notification(STARTER_NOTIFICATION)
 
     shifts_with_mentions.each do |shift_with_mention|
