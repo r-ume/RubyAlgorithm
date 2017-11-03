@@ -15,4 +15,13 @@ class SlackNotifier
     @notifier.ping(notification)
   end
 
+  def sends_todays_shifts(shifts_with_mentions)
+    self.sends_notification(STARTER_NOTIFICATION)
+
+    shifts_with_mentions.each do |shift_with_mention|
+      shifts_with_mention = "<#{shift_with_mention[:mention]}> : #{shift_with_mention[:calendar_name]} : #{shift_with_mention[:start_time]}"
+      self.sends_notification(shifts_with_mention)
+    end
+  end
+
 end
