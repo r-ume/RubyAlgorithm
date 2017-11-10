@@ -6,16 +6,7 @@ GEM
     dotenv (2.2.1)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.9.2)
-      faraday (>= 0.7.4, < 0.10)
-    hashie (3.5.6)
-    instagram (1.1.6)
-      faraday (>= 0.7, < 0.10)
-      faraday_middleware (>= 0.8, < 0.10)
-      hashie (>= 0.4.0)
-      multi_json (~> 1.0, >= 1.0.3)
     method_source (0.9.0)
-    multi_json (1.12.2)
     multipart-post (2.0.0)
     pry (0.11.2)
       coderay (~> 1.1.0)
@@ -30,7 +21,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  instagram
+  faraday
   pry
   pry-byebug
   slack-notifier

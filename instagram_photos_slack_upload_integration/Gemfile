@@ -15,5 +15,5 @@ gem 'dotenv'
 # SLACK NOTIFICATION
 gem 'slack-notifier'
 
-# INSTAGRAM
-gem 'instagram'
+# HTTP CLIENT
+gem 'faraday'
