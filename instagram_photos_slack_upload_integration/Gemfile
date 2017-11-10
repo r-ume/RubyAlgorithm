@@ -14,3 +14,6 @@ gem 'dotenv'
 
 # SLACK NOTIFICATION
 gem 'slack-notifier'
+
+# INSTAGRAM
+gem 'instagram'
