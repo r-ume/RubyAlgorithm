@@ -5,7 +5,7 @@ require 'slack-notifier'
 class SlackNotifier
 
   def initialize
-    @notifier = Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL'])
+    @notifier = Slack::Notifier.new(ENV['TIMES_JIO_SLACK_WEBHOOK_URL'])
   end
 
   def sends_notification(notification)
