@@ -72,5 +72,6 @@ smaller_than_three = -> (num){ num < 3 }
 [4, 4, 2, 3].take_while(&smaller_than_three)
 [4, 4, 2, 3].drop_while(&smaller_than_three)
 
-
-
+# with_index method
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144].select.with_index { |num, index| ( num % (index + 1)).zero?}
+# => [1, 5, 144]

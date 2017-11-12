@@ -6,7 +6,7 @@ require './mentors.rb'
 require './util/array_iterator.rb'
 
 class GoogleCalendar
-  PRIMARY_CALENDAR_ID = 'tcwaseda@gmail.com'
+  PRIMARY_CALENDAR_ID = ENV['GMAIL_ACCOUNT']
   APPLICATION_NAME    = 'Slack Notification From Calendar'
 
   def initialize

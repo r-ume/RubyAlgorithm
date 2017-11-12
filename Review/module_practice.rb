@@ -53,3 +53,18 @@ friend_list = FriendList.new('Alice', 'Bob', 'Charile')
 p friend_list.count
 p friend_list.map(&:upcase)
 p friend_list.find{ |v| /b/  === v }
+
+module Area
+  def triangle(base, height)
+    base * height / 2.0
+  end
+
+  def circle(radius)
+    radius * radius * 3.14
+  end
+
+  module_function :triangle, :circle
+end
+
+puts Area.triangle(7, 5)
+puts Area.circle(3)
