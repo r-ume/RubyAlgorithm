@@ -1,12 +1,10 @@
-require 'date'
-
 module Util
   class HashHandler
-    TODAY = Date.today.strftime('%m/%d')
+    TOMORROW = (Date.today + 1).strftime('%m/%d')
 
     class << self
-      def has_today_birthday?(hash)
-        hash[:birthday] == TODAY
+      def hash_has_birthday_tomorrow?(hash)
+        hash[:birthday] == TOMORROW
       end
     end
 

@@ -4,7 +4,8 @@ require './google_authentication.rb'
 require './google_calendar.rb'
 require './slack_notifier.rb'
 require './mentors.rb'
-require './util/array_iterator.rb'
+require './util/array_handler.rb'
+require './util/hash_handler.rb'
 
 google_calendar = GoogleCalendar.new
 shifts = google_calendar.today_shifts
