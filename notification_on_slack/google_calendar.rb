@@ -3,7 +3,7 @@ require 'pry'
 require 'date'
 require './google_authentication.rb'
 require './mentors.rb'
-require './util/array_iterator.rb'
+require './util/array_handler.rb'
 
 class GoogleCalendar
   PRIMARY_CALENDAR_ID = ENV['GMAIL_ACCOUNT']

@@ -1,5 +1,5 @@
 module Util
-  class ArrayIterator
+  class ArrayHandler
     CURRENT_DATETIME  = DateTime.now
     TOMORROW_DATETIME = CURRENT_DATETIME + 1
 
