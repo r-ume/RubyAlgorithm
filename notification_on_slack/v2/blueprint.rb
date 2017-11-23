@@ -10,8 +10,7 @@ end
 # Singleton（シングルトンパターン)で実装する。
 # List of Mentors
 class MentorRegistry
-
-  # Factory, setup registry (yamlでやる)
+  # Factory, setup registry
   # @return MentorRegistry
   def self.setup(config_file); end
 
@@ -19,7 +18,6 @@ class MentorRegistry
   # @return Mentor
   def find_by_name(name); end
 end
-
 
 # Data object to wrap and carry an item originally from Google Calendar.
 class CalendarItem
@@ -45,7 +43,6 @@ class Slack
   # @param Mentor mentor
   def self.send_birthday_notification(mentor); end
 end
-
 
 ######################
 

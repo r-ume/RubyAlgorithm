@@ -4,6 +4,8 @@ require 'pry'
 require './util/google_authentication'
 require '../v2/calendar_item'
 
+Dotenv.overload
+
 # Utility (static class) for retrieving data from Google calendar.
 class Calendar
   @@calendar = GoogleAuthentication.access_to_calendar_service
@@ -17,7 +19,7 @@ class Calendar
           CalendarItem.new( { calendar_name: event.summary, start_time: event.start.date_time } ).tomorrow_shift?
         }
       }
-      tomorrow_shifts.flatten
+      tomorrow_shifts.flatten.map{ |shift| CalendarItem.new( { calendar_name: shift.summary, start_time: shift.start.date_time } )}
     end
 
     private

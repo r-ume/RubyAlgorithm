@@ -1,3 +1,5 @@
+require '../v2/mentor_registry'
+
 # Data object to wrap and carry an item originally from Google Calendar.
 class CalendarItem
 
@@ -10,13 +12,13 @@ class CalendarItem
   # Return a mentor who is a participant of this calendar item.
   # @return Mentor
   def mentor
-
+    MentorRegistry.instance.find_by_name(@calendar_item[:calendar_name])
   end
 
   # Checks if calendar_item is a tomorrow_shift
   # @return Boolean
   def tomorrow_shift?
-    self.start_time_nil? && self.between_today_and_tomorrow?
+    start_time_nil? && between_today_and_tomorrow?
   end
 
   private
