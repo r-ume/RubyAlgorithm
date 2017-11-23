@@ -1,0 +1,41 @@
+mentors:
+  jio:
+    mention:       '@jiosotoyama'
+    calendar_name: 'じお'
+    birthday:      '05/29'
+  yuta:
+    mention:       '@yuta-takahashi'
+    birthday:      '08/19'
+    calendar_name: 'ゆうた'
+  ukiy:
+    mention:       '@ueda-yukihiro'
+    birthday:      '11/05'
+    calendar_name: 'ゆっきー'
+  umekichi:
+    mention:       '@ryo-umeki'
+    birthday:      '10/15'
+    calendar_name: 'うめきち'
+  satsuki:
+    mention:       '@satsuki-kajiya'
+    birthday:      '05/21'
+    calendar_name: 'さつき'
+  awa:
+    mention:       '@keisuke.awa'
+    birthday:      '10/27'
+    calendar_name: 'あわちゃん'
+  sawa:
+    mention:       '@sawa-uchida'
+    birthday:      '10/12'
+    calendar_name: 'さわっち'
+  makiy:
+    mention:       '@makiko-shimizu'
+    birthday:      '01/13'
+    calendar_name: 'まっきー'
+  anju:
+    mention:       '@anju'
+    birthday:      '01/13'
+    calendar_name: 'あんじゅ'
+  mai:
+    mention:       '@takana-mai'
+    birthday:      '09/20'
+    calendar_name: 'まい'
