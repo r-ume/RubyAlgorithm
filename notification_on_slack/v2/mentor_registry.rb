@@ -1,6 +1,7 @@
 require 'yaml'
 require 'pry'
 require 'singleton'
+require '../v2/mentor'
 
 # List of Mentors
 class MentorRegistry
@@ -16,7 +17,7 @@ class MentorRegistry
   # Find mentors who has a specific name
   # @return Mentor
   def find_by_name(name)
-    @settings[name]
+    Mentor.new(@settings[name])
   end
 
 end
