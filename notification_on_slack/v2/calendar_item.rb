@@ -12,7 +12,20 @@ class CalendarItem
   # Return a mentor who is a participant of this calendar item.
   # @return Mentor
   def mentor
-    MentorRegistry.instance.find_by_name(@calendar_item[:calendar_name])
+    MentorRegistry.instance.find_by_name(calendar_name)
+  end
+
+  # Return a calendar_name assigned to the item.
+  # In this application, the calendar_name is always a name for a mentor.
+  # @return String
+  def calendar_name
+    @calendar_item[:calendar_name]
+  end
+
+  # Return when the item starts.
+  # @return String
+  def start_time
+    @calendar_item[:start_time].strftime('%m/%d %H:%M')
   end
 
   # Checks if calendar_item is a tomorrow_shift
