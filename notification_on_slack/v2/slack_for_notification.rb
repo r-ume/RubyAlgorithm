@@ -18,14 +18,14 @@ class SlackForNotification
       SlackNotifier.notifier_instance.post(text: HOPING_REACTION_STATEMENT)
     end
 
-    def sends_shift_notification(calendar_item)
-      notification = "<#{calendar_item.mentor.mention}> : #{calendar_item.calendar_name} : #{calendar_item.start_time}"
+    def sends_shift_notification(mention:, calendar_name:, start_time:)
+      notification = "<#{mention}> : #{calendar_name} : #{start_time}"
       SlackNotifier.notifier_instance.post(text: notification)
     end
 
-    def sends_birthday_notification(calendar_item)
+    def sends_birthday_notification(mention:, calendar_name:)
       SlackNotifier.notifier_instance.post(text: BIRTHDAY_STATEMENT)
-      SlackNotifier.notifier_instance.post(text: "<#{calendar_item.mentor.mention}>#{calendar_item.calendar_name}")
+      SlackNotifier.notifier_instance.post(text: "<#{mention}>#{calendar_name}")
       SlackNotifier.notifier_instance.post(text: CELERATION_ENCOURAGEMENT_STATEMENT)
     end
 

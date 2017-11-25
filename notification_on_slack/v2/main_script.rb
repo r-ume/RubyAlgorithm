@@ -15,10 +15,16 @@ else
   SlackForNotification.sends_starter_notification
 
   shifts_tomorrow.each do |calendar_item|
-    SlackForNotification.sends_shift_notification(calendar_item)
+    mentor        = calendar_item.mentor
+    mention       = calendar_item.mentor.mention
+    calendar_name = calendar_item.calendar_name
 
-    if calendar_item.mentor.day_before_birthday?
-      SlackForNotification.sends_birthday_notification(calendar_item)
+    SlackForNotification.sends_shift_notification(
+        mention: mention, calendar_name: calendar_name, start_time: start_time
+    )
+
+    if mentor.day_before_birthday?
+      SlackForNotification.sends_birthday_notification(mention: mention, calendar_name: calendar_name)
     end
   end
 end
