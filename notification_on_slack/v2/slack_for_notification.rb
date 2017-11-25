@@ -12,25 +12,27 @@ class SlackForNotification
   BIRTHDAY_STATEMENT        = 'そして、なんと明日誕生日のメンターが!!! そのメンターは...!!!'
   CELERATION_ENCOURAGEMENT_STATEMENT = '明日会ったときに、「誕生日おめでとう」と言おう！'
 
+  @@notifier_instance = SlackNotifier.instance
+
   class << self
     def sends_starter_notification
-      SlackNotifier.notifier_instance.post(text: STARTER_NOTIFICATION)
-      SlackNotifier.notifier_instance.post(text: HOPING_REACTION_STATEMENT)
+      @@notifier_instance.post(text: STARTER_NOTIFICATION)
+      @@notifier_instance.post(text: HOPING_REACTION_STATEMENT)
     end
 
     def sends_shift_notification(mention:, calendar_name:, start_time:)
       notification = "<#{mention}> : #{calendar_name} : #{start_time}"
-      SlackNotifier.notifier_instance.post(text: notification)
+      @@notifier_instance.post(text: notification)
     end
 
     def sends_birthday_notification(mention:, calendar_name:)
-      SlackNotifier.notifier_instance.post(text: BIRTHDAY_STATEMENT)
-      SlackNotifier.notifier_instance.post(text: "<#{mention}>#{calendar_name}")
-      SlackNotifier.notifier_instance.post(text: CELERATION_ENCOURAGEMENT_STATEMENT)
+      @@notifier_instance.post(text: BIRTHDAY_STATEMENT)
+      @@notifier_instance.post(text: "<#{mention}>#{calendar_name}")
+      @@notifier_instance.post(text: CELERATION_ENCOURAGEMENT_STATEMENT)
     end
 
     def sends_no_shift_notification
-      SlackNotifier.notifier_instance.post(text: NO_SHIFT_STATEMENT)
+      @@notifier_instance.post(text: NO_SHIFT_STATEMENT)
     end
   end
 end
