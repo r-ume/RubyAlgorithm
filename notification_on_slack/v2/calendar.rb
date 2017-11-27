@@ -18,7 +18,7 @@ class Calendar
       ids.each { |calendar_id|
         @@calendar.list_events(calendar_id).items.each { |event|
           calendar_item = CalendarItem.new( { calendar_name: event.summary, start_time: event.start.date_time } )
-          ret.push(calendar_item) if calendar_item.tomorrow_shift?
+          tomorrow_shifts.push(calendar_item) if calendar_item.tomorrow_shift?
         }
       }
       tomorrow_shifts

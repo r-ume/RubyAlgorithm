@@ -26,8 +26,8 @@ class SlackForNotification
     end
 
     def sends_birthday_notification(mention:, calendar_name:)
-      @notifier.post(text: BIRTHDAY_STATEMENT)
-      @notifier.post(text: "<#{mention}>#{calendar_name}")
+      @notifier.post(text: "#{BIRTHDAY_STATEMENT}")
+      @notifier.post(text: "<#{mention}>#{calendar_name}　:tada: :tada:")
       @notifier.post(text: CELERATION_ENCOURAGEMENT_STATEMENT)
     end
 
