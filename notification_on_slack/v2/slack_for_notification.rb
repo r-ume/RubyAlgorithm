@@ -16,23 +16,23 @@ class SlackForNotification
 
   class << self
     def sends_starter_notification
-      @notifier.post(text: STARTER_NOTIFICATION)
-      @notifier.post(text: HOPING_REACTION_STATEMENT)
+      SlackNotifier.post(text: STARTER_NOTIFICATION)
+      SlackNotifier.post(text: HOPING_REACTION_STATEMENT)
     end
 
     def sends_shift_notification(mention:, calendar_name:, start_time:)
       notification = "<#{mention}> : #{calendar_name} : #{start_time}"
-      @notifier.post(text: notification)
+      SlackNotifier.post(text: notification)
     end
 
     def sends_birthday_notification(mention:, calendar_name:)
-      @notifier.post(text: "#{BIRTHDAY_STATEMENT}")
-      @notifier.post(text: "<#{mention}>#{calendar_name}　:tada: :tada:")
-      @notifier.post(text: CELERATION_ENCOURAGEMENT_STATEMENT)
+      SlackNotifier.post(text: "#{BIRTHDAY_STATEMENT}")
+      SlackNotifier.post(text: "<#{mention}>#{calendar_name}　:tada: :tada:")
+      SlackNotifier.post(text: CELERATION_ENCOURAGEMENT_STATEMENT)
     end
 
     def sends_no_shift_notification
-      @notifier.post(text: NO_SHIFT_STATEMENT)
+      SlackNotifier.post(text: NO_SHIFT_STATEMENT)
     end
   end
 end
