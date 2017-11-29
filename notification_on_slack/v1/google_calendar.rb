@@ -3,7 +3,7 @@ require 'pry'
 require 'date'
 require './google_authentication.rb'
 require './mentors.rb'
-require './util/array_iterator.rb'
+require './util/array_handler.rb'
 
 class GoogleCalendar
   PRIMARY_CALENDAR_ID = ENV['GMAIL_ACCOUNT']
@@ -16,7 +16,7 @@ class GoogleCalendar
   end
 
   def today_shifts
-    Util::ArrayIterator.select_tomorrow_elements(shifts_without_no_start_time)
+    Util::ArrayHandler.select_tomorrow_elements(shifts_without_no_start_time)
   end
 
   def fetch_calendars
@@ -42,6 +42,6 @@ class GoogleCalendar
   end
 
   def shifts_without_no_start_time
-    Util::ArrayIterator.remove_no_start_time_elements(fetch_all_shifts)
+    Util::ArrayHandler.remove_no_start_time_elements(fetch_all_shifts)
   end
 end
