@@ -1,1 +1,5 @@
 <h1>Hello World</h1>
+
+<%= form_tag(action: :purchase, method: :post) do %>
+    <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="<%= ENV['PAYJP_PUBLIC_KEY'] %>"></script>
+<% end %>
