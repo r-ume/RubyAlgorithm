@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'pry'
+
 def block_sample
   puts 'stand up'
   # yieldの実装を呼びだし先で定義する。
@@ -73,10 +76,19 @@ end
 p total(1, 10)
 p total(1, 10){ |num| num ** 2 }
 
-
 def my_method (&my_block)
   my_block
 end
 
 obj = my_method { |x| x + 1 }
 obj.call(2)
+
+def magic_five_box(after_input, someProc)
+  someProc.call(after_input, 5)
+end
+
+sum_proc = Proc.new do |x, y|
+  p x + y
+end
+
+magic_five_box(3, sum_proc)
