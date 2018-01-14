@@ -16,13 +16,20 @@ end
 Sweet.lot
 
 module Greetable
-  def greet_to(name)
+  def greet_to(name:)
     puts "Hello, #{name}. My class is #{self.class}."
+  end
+end
+
+module Helloable
+  def hello_to(name:)
+    p "hello to #{name}"
   end
 end
 
 class Alice
   include Greetable
+  extend Helloable
 
   def greet_to(name)
     super
@@ -32,7 +39,8 @@ class Alice
 end
 
 alice = Alice.new
-alice.greet_to 'Bob'
+alice.greet_to(name: 'Bob')
+Alice.hello_to(name: 'hoge')
 
 
 class FriendList
